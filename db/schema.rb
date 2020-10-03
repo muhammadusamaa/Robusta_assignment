@@ -32,9 +32,10 @@ ActiveRecord::Schema.define(version: 2020_10_03_132553) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "models", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "movies", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.text "discription"
+    t.string "movie_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
