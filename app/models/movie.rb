@@ -3,7 +3,7 @@ class Movie < ApplicationRecord
   has_many :actors
   has_many :genre
   has_many :awards
-  has_one :director
+  belongs_to :director
 
   mount_uploader :movie_image, MovieImageUploader
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_03_144748) do
+ActiveRecord::Schema.define(version: 2020_10_03_150144) do
 
   create_table "actor_awards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "actor_id"
@@ -79,6 +79,7 @@ ActiveRecord::Schema.define(version: 2020_10_03_144748) do
     t.string "movie_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "director_id"
   end
 
   create_table "news", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
