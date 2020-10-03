@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_10_03_150144) do
+ActiveRecord::Schema.define(version: 2020_10_03_160926) do
 
   create_table "actor_awards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "actor_id"
@@ -27,9 +27,12 @@ ActiveRecord::Schema.define(version: 2020_10_03_150144) do
   end
 
   create_table "awards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "number_of_awards"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "name"
+    t.string "awardable_type"
+    t.bigint "awardable_id"
+    t.index ["awardable_type", "awardable_id"], name: "index_awards_on_awardable_type_and_awardable_id"
   end
 
   create_table "director_awards", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
