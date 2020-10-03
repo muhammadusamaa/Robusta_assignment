@@ -1,5 +1,4 @@
 class Award < ApplicationRecord
-  has_many :movies
-  has_many :actors
-  has_many :directors
+belongs_to :awardable, polymorphic: true
 end
+  
