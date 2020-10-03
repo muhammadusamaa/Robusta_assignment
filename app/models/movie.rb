@@ -5,5 +5,5 @@ class Movie < ApplicationRecord
   has_many :awards
   has_one :director
 
-  mount_uploader :movie_image, MovieImageUploade
+  mount_uploader :movie_image, MovieImageUploader
 end
