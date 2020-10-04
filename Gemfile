@@ -31,7 +31,12 @@ gem 'jbuilder', '~> 2.5'
 gem "figaro"
 gem 'carrierwave', '~> 2.0'
 gem 'rails_admin', '~> 2.0'
-
+gem 'bootstrap', '~> 4.2.1'
+gem 'popper_js', '~> 1.14.5'
+gem 'jquery-rails'
+gem 'mini_racer'
+gem 'ratyrate'
+gem 'devise'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -1,5 +1,4 @@
 class Movie < ApplicationRecord
-  has_many :rates
   has_many :movie_actors
   has_many :actors,  through: :movie_actors
   has_many :movie_genres
@@ -8,4 +7,5 @@ class Movie < ApplicationRecord
   belongs_to :director
 
   mount_uploader :movie_image, MovieImageUploader
+  ratyrate_rateable 'original_score'
 end
