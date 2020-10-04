@@ -5,5 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   # For rating
-  ratyrate_rater         
+  ratyrate_rater       
+  has_many :watchlists
+  has_many :movies, through: :watchlists  
 end
