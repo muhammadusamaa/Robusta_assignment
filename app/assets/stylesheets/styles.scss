@@ -1,0 +1,26 @@
+img, svg {
+    vertical-align: middle;
+    max-width: 182px;
+    max-height: 268px;
+    display: block;
+    margin: auto;
+}
+
+.movie_name {
+	text-align: center;
+	padding-top: 15px;
+}
+
+.movie_discription {
+	text-align: center;
+}
+
+.star {
+	display: inline-flex;
+}
+
+.show_movie_image {
+	width: 300px;
+	height: 500px;
+	text-align: center;
+}

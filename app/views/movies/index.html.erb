@@ -1,0 +1,30 @@
+<h1  style="text-align: center;">IMDB</h1>
+<section>
+	<h2>Rate Your Favorite Movies</h2>
+	<div class="container">
+		<div class="row">
+			<% @movies.each do |movie| %>
+				<div class="col-lg-4">
+					<div>
+						<%= link_to image_tag(movie.movie_image.to_s), movie_path(movie.id) %>
+					</div>
+					<h4 class="movie_name">
+						<%= movie.name %>
+					</h4>
+					<p class="movie_discription">
+						<%= movie.discription %>
+					</p>
+					<div class="row">
+					  <div class="small-2 large-4 columns">
+					    <% if current_user %>
+					      Rate: <%= rating_for movie, "original_score" %>
+					      <br>
+					    <% end %>
+					  </div>
+					</div>
+				</div>
+			<% end %>
+		</div>		
+	</div>
+
+</section>
