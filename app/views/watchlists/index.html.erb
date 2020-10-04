@@ -1,9 +1,22 @@
+<h2 style="text-align: center;">Your favourite Movies</h2>
 <% if @watchlist.empty? %>
 	<p>your watchlist is empty, go add some movies</p>
 <%else %>
-	<% @watchlist.each do |movie| %>
-		<%= movie.name %>
-		<%= movie.description %>
-		<%= image_tag movie.movie_image.to_s %>
-	<% end %>
+	<div class="watchlist_bkground">
+		<table class="table">
+		  <thead class="thead-dark">
+		    <tr>
+		      <th scope="col">movie</th>
+		    </tr>
+		  </thead>
+		    <tbody>
+		     <% @watchlist.each do |movie| %>
+		     <tr>
+			      	     	
+		     	   <td><a href="<%= movie_path(movie.id) %>"><%=  movie.name %></a></td>
+		     	</tr>
+		     <% end %>
+		    </tbody>
+		</table>
+	</div>
 <% end %>

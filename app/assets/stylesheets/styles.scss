@@ -24,3 +24,80 @@ img, svg {
 	height: 500px;
 	text-align: center;
 }
+
+.bg-img {
+  /* The image used */
+  background-image: url("bg-signup.jpg");
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.my_title {
+	font-size: 6.5rem;
+	line-height: 6.5rem;
+	letter-spacing: 0.8rem;
+	font-family: cursive;
+	color: rgb(95,95,95);
+	text-shadow: 2px 2px 4px #000000;
+	text-align: center;
+	top: 200px;
+	left: 180px;
+	position: absolute;
+}
+
+.movie_style {
+	padding-top: 10px;
+}
+h2 {
+	font-family: cursive;
+	color: rgb(95,95,95);
+}
+.stars_position {
+	margin: 0 auto;
+}
+.watchlist_bkground {
+	background-image: url("bg-signup.jpg");
+}
+
+td {
+	padding: 0;
+}
+td a {
+	padding: 0.75rem;
+	color: white;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+}
+td a:hover {
+	color: black;
+	background-color: white;
+	text-decoration: none;
+
+}
+
+.login_style {
+	text-align: center;
+}
+
+.fb-btn {
+	background-color: #0093F5;
+	width: 300px;
+	height: 50px;
+	color: white;
+	border-radius: 5px;
+	margin: auto;
+	text-align: center;
+	padding-top: 10px;
+	margin-top: 15%;
+}
+
+.fb-btn a {
+	color: white;
+}

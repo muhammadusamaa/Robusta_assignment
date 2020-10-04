@@ -37,6 +37,7 @@ gem 'jquery-rails'
 gem 'mini_racer'
 gem 'ratyrate'
 gem 'devise'
+gem 'omniauth-facebook'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

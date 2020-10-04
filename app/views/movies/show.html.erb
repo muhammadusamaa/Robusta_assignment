@@ -2,12 +2,16 @@
 	<div class="show_movie_image">
 		<%= image_tag @movie.movie_image.to_s %>
 		Name: <%= @movie.name %>
+		<div class="small-2 large-2 columns">
+		  Movie rate: <%= imdb_style_rating_for @movie, current_user%>
+		</div>
 	</div>
 	Discription: <%= @movie.discription %><br>
 </div>
 <div class="actors">
 	Actors: <% @actors.each do |actor| %>
 				<%= actor.name  %>:(<%= (actor.age) %> year)<br>
+
 				<% actor.awards.each do |award| %>
 				<%= award.name %>
 				<% end %>
@@ -23,5 +27,6 @@
 	Awards: <% @movie.awards.each do |award| %>
 	 <%= award.name %>
 	<% end %>
+
 </div>
 
