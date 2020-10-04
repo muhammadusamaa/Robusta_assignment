@@ -9,6 +9,8 @@ class Movie < ApplicationRecord
   mount_uploader :movie_image, MovieImageUploader
   ratyrate_rateable 'original_score'
 
+  validates_presence_of :name
+
   def self.search(search_name)
     return if search_name.empty?
     where('name LIKE ?', "%#{search_name}%")

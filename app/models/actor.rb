@@ -3,7 +3,7 @@ class Actor < ApplicationRecord
   has_many :movies,  through: :movie_actors
  
   has_many :awards, as: :awardable
-
+  validates_presence_of :name
 
   def self.search(search_name)
     return if search_name.empty?
